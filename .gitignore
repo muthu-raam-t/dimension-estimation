@@ -1,0 +1,35 @@
+# virtual environment
+.venv/
+venv/
+env/
+
+# python
+__pycache__/
+*.py[cod]
+*.egg-info/
+.ipynb_checkpoints/
+
+# model weights (downloaded on first run, do not commit)
+*.pt
+*.pth
+*.onnx
+models/*.pkl
+
+# calibration is machine-specific
+calibration/*.npz
+
+# captured data and outputs
+data/*.jpg
+data/*.png
+data/*.csv
+results/*.jpg
+results/*.png
+test.jpg
+marker.png
+
+# os / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+!docs/architecture.png
