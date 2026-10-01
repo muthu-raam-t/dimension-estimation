@@ -1,0 +1,10 @@
+ultralytics>=8.3.0
+transformers>=4.45.0
+torch
+opencv-contrib-python>=4.8.0
+numpy
+pandas
+scikit-learn
+lightgbm
+pillow
+joblib
