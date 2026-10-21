@@ -1,0 +1,11 @@
+loaded 19 rows over 8 objects
+
+model         long MAE   long %  short MAE  short %
+---------------------------------------------------
+none (raw)        1.36     14.3       0.71     16.4
+linear            2.26     25.2       0.45     10.1
+ridge             1.41     17.3       0.32      7.4
+lightgbm          1.84     17.8       0.97     20.8
+
+best: ridge
+saved models/correction.pkl

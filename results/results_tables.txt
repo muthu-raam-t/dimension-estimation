@@ -1,0 +1,43 @@
+Dataset: 19 samples, 8 objects, 8 classes
+
+TABLE 1 - Three-stage ablation   (slide 13)
+Stage                         Length MAE   Width MAE  Rel. error
+----------------------------------------------------------------
+Raw depth, no anchoring          73.34 cm     36.68 cm      713.2%
+With marker anchoring             1.36 cm      0.71 cm       15.4%
+With learned correction           1.84 cm      0.97 cm       19.3%
+
+Base paper reference: 0.86 cm length, 0.76 cm width, 89% accuracy (two cameras)
+
+TABLE 2 - Correction model comparison
+Model           Length MAE   Width MAE
+--------------------------------------
+none (raw)          1.36 cm      0.71 cm
+linear              2.26 cm      0.45 cm
+ridge               1.41 cm      0.32 cm
+lightgbm            1.84 cm      0.97 cm
+
+TABLE 3 - Repeatability   (slide 14)
+Object             n   Length SD    Width SD
+--------------------------------------------
+adapter1           2      0.04 cm      1.18 cm
+adapterlaptop      2      0.00 cm      0.00 cm
+bottlesmall        2      0.00 cm      0.00 cm
+mintbox            4      0.00 cm      0.00 cm
+notepad            2      0.00 cm      0.00 cm
+phone              4      2.04 cm      0.56 cm
+torchsmall         2      0.00 cm      0.00 cm
+MEAN                      0.30 cm      0.25 cm
+
+TABLE 4 - Error by object class   (slide 14)
+Class              n  Length MAE   Width MAE
+--------------------------------------------
+book               2      3.28 cm      1.03 cm
+bottle             2      2.54 cm      1.07 cm
+cell phone         2      2.12 cm      0.75 cm
+laptop             2      1.65 cm      0.61 cm
+microwave          2      2.43 cm      1.06 cm
+mouse              1      0.32 cm      1.88 cm
+object             6      1.33 cm      1.16 cm
+remote             2      1.30 cm      0.25 cm
+
